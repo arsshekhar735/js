@@ -70,3 +70,15 @@ console.log(2 ^ 3);
 console.log(5 << 1); //here 1 represent how many times it should do the left shift.
 //Now we will do right shift (>>) then it become divided by 2.
 console.log(10 >> 1);
+
+// Now we will see the IF - ELSE 
+
+//see the one example.
+let age = 15//input("Enter the age");
+if(age >= 18)
+{
+    console.log("You can vote to BJP.");
+}
+else{
+    console.log("Tum abhi bache ho");
+}
