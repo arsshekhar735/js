@@ -126,3 +126,21 @@ for(let i = 1; i < 10; i++) //it will skip the 4 and remaining print as it.
         console.log(i);
     }
 }
+ 
+
+//Now we will see the while loop
+console.log("we will see the while loop");
+let i = 1;
+while(i <= 5)
+{
+    console.log(i);
+    i++;
+}
+//Now we will do reverse number
+console.log("we will do reverse number");
+let j = 5;
+while(j>=1)
+{
+    console.log(j);
+    j--;
+}
