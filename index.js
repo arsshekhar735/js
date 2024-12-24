@@ -82,3 +82,47 @@ if(age >= 18)
 else{
     console.log("Tum abhi bache ho");
 }
+
+
+//Loops - set of instruction that need to run repeately then there we use loops.
+//There are 3 types of loops - for, while, do while.
+
+for(let i = 1; i < 10; i++) // i = 1 => initailisation; i < 10 => condition; i++  => updation
+{
+    console.log("Jai Shree Ram"); //loop logic
+}
+
+//Now we will do reverse counting
+
+for(let i = 10; i >= 1; i--)
+{
+    console.log(i)
+}
+//now we will see the break keyboard
+console.log(" we will see the break keyboard");
+
+for(let i = 1; i <= 10; i++)
+{
+    if(i == 5)
+    {
+        break;
+    }
+    else
+    {
+        console.log(i);
+    }
+}
+
+//Now we will see the continue keyboard
+console.log("we will see the continue keyboard");
+for(let i = 1; i < 10; i++) //it will skip the 4 and remaining print as it.
+{
+    if(i == 4)
+    {
+        continue;
+    }
+    else
+    {
+        console.log(i);
+    }
+}
