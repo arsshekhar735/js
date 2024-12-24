@@ -144,3 +144,8 @@ while(j>=1)
     console.log(j);
     j--;
 }
+
+for(let i = 10; i < 20; i++)
+{
+    console.log()
+}
