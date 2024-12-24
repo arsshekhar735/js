@@ -52,3 +52,21 @@ console.log(non1);
 
 let non2 = !(3); //output is false.
 console.log(non1);
+
+
+//Bitwise Operator. In this and, or, xor, <<, >>.
+//in add means both contain true means then only it will give true.
+//In false means anyone if true then it will give true.
+//In XOR if same thing is then it will give false and opposite thing will give true. EX- 0,0 => 0, 0,1=> 1.
+
+console.log(~(0)); 
+
+console.log(2 ^ 2);//This is XOR.
+console.log(2 ^ 3);
+
+//Now we will see the left shift and right shift.
+//When we do left shift(<<) then it get multiplied by 2. 
+//For example 5 after left shift it become 10.
+console.log(5 << 1); //here 1 represent how many times it should do the left shift.
+//Now we will do right shift (>>) then it become divided by 2.
+console.log(10 >> 1);
