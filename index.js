@@ -171,3 +171,19 @@ console.log(fname.length);
 
 console.log(fname.toUpperCase());
 console.log(lname.toLowerCase());
+//Here we will see how to access the character of string.
+//In this (2,10). This will print charcater form 2 to 10. That means it will include 2 and exclude the 10.
+let srr = "Hanumanjee";
+console.log(srr.substring(2));
+console.log(srr.substring(2,6));
+console.log(srr.substring(0,10));
+
+
+//Now we will see how to spilt the string.
+console.log("we will see how to spilt the string.");
+let pname = "Bolo Radhe Radhe";
+let words = pname.split(' ');//this (' ') say on which basis you are spilting the string.
+console.log(words);
+//Now we will spilt the string over 'h' character
+
+let ssname = ""
