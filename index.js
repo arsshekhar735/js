@@ -186,4 +186,6 @@ let words = pname.split(' ');//this (' ') say on which basis you are spilting th
 console.log(words);
 //Now we will spilt the string over 'h' character
 
-let ssname = ""
+let ssname = "Today is the day of do.";
+let sspilt = ssname.split('t');
+console.log(sspilt);
