@@ -239,3 +239,12 @@ function getSum(aa,bb,cc){
 
 let ans = getSum(1,2,3);
 console.log("Printing Sum: ",ans);
+
+//Now we will define the function using variable. IN THIS NO NEED TO GIVE NAME TO FUNCTION
+console.log("we will define the function using variable");
+
+let getMul = function(aaa,bbb){
+    return aaa*bbb;
+}
+//let ans2 = getMul
+console.log(getMul(34,35));
