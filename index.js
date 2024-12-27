@@ -193,67 +193,80 @@
 //Now we will see the function:- reusable code \, enhance code readability
 //Now we will see the basic syntax of the code
 
-function myfirstf(){ //function declaration
-    console.log("My first function");
-}
-myfirstf(); //function calling
+// function myfirstf(){ //function declaration
+//     console.log("My first function");
+// }
+// myfirstf(); //function calling
 
-console.log("Print number upto n using function");
+// console.log("Print number upto n using function");
 
-function print(){ //function defined
-    for(let i = 1; i <= 5; i++)
-    {
-        console.log(i);
-    }
-}
+// function print(){ //function defined
+//     for(let i = 1; i <= 5; i++)
+//     {
+//         console.log(i);
+//     }
+// }
 
-print()//function calling
+// print()//function calling
 
-//Now we will see the function with passing parameter
-let number = 10;
-function printN(number){ //(number) is called parameter
-    for(let i = 0; i <= number; i++)
-    {
-        console.log(i);
-    }
+// //Now we will see the function with passing parameter
+// let number = 10;
+// function printN(number){ //(number) is called parameter
+//     for(let i = 0; i <= number; i++)
+//     {
+//         console.log(i);
+//     }
     
-}
-printN(number);//(numb) is called arguments
+// }
+// printN(number);//(numb) is called arguments
 
-//We can send multiple parameter in function
-console.log("We can send multiple parameter in function");
-function getaverage(num1, num2){
-    let avg = (num1+num2)/2;
-    console.log("average: ",avg);
-}
+// //We can send multiple parameter in function
+// console.log("We can send multiple parameter in function");
+// function getaverage(num1, num2){
+//     let avg = (num1+num2)/2;
+//     console.log("average: ",avg);
+// }
 
-getaverage(34,35);
+// getaverage(34,35);
 
-//Now we will see the Return Function => The function which return something 
+// //Now we will see the Return Function => The function which return something 
 
-console.log("we will see the Return Function");
-function getSum(aa,bb,cc){
-    //let sum = aa+bb+cc;
-    return aa+bb+cc;;
-}
+// console.log("we will see the Return Function");
+// function getSum(aa,bb,cc){
+//     //let sum = aa+bb+cc;
+//     return aa+bb+cc;;
+// }
 
-let ans = getSum(1,2,3);
-console.log("Printing Sum: ",ans);
+// let ans = getSum(1,2,3);
+// console.log("Printing Sum: ",ans);
 
-//Now we will define the function using variable. IN THIS NO NEED TO GIVE NAME TO FUNCTION
-console.log("we will define the function expression (using variable)");
+// //Now we will define the function using variable. IN THIS NO NEED TO GIVE NAME TO FUNCTION
+// console.log("we will define the function expression (using variable)");
 
-let getMul = function(aaa,bbb){
-    return aaa*bbb;
-}
-//let ans2 = getMul
-console.log(getMul(34,35));
+// let getMul = function(aaa,bbb){
+//     return aaa*bbb;
+// }
+// //let ans2 = getMul
+// console.log(getMul(34,35));
 
-//Now we will see the arrow function.
-console.log("we will see the arrow function.");
+// //Now we will see the arrow function.
+// console.log("we will see the arrow function.");
 
-let getDiv = (g,h) => { // here no need to write the function or function name just define the variable and use => after parameters
-    return g/h;
-}
+// let getDiv = (g,h) => { // here no need to write the function or function name just define the variable and use => after parameters
+//     return g/h;
+// }
 
-console.log(getDiv(34,35));
+// console.log(getDiv(34,35));
+
+//Now we will see the Object.
+console.log("we will see the Object.");
+//The object is collection of key-value pairs
+
+let obj = {
+    "myname" : "Suman Shekhar",
+    "age": 21,
+    "Education": "B.Tech"
+};
+
+console.log(obj);
+console.log(typeof(obj));//This will type of variable
