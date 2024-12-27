@@ -231,4 +231,11 @@ getaverage(34,35);
 
 //Now we will see the Return Function => The function which return something 
 
-console.log("we will see the Return Function")
+console.log("we will see the Return Function");
+function getSum(aa,bb,cc){
+    //let sum = aa+bb+cc;
+    return aa+bb+cc;;
+}
+
+let ans = getSum(1,2,3);
+console.log("Printing Sum: ",ans);
