@@ -241,10 +241,19 @@ let ans = getSum(1,2,3);
 console.log("Printing Sum: ",ans);
 
 //Now we will define the function using variable. IN THIS NO NEED TO GIVE NAME TO FUNCTION
-console.log("we will define the function using variable");
+console.log("we will define the function expression (using variable)");
 
 let getMul = function(aaa,bbb){
     return aaa*bbb;
 }
 //let ans2 = getMul
 console.log(getMul(34,35));
+
+//Now we will see the arrow function.
+console.log("we will see the arrow function.");
+
+let getDiv = (g,h) => { // here no need to write the function or function name just define the variable and use => after parameters
+    return g/h;
+}
+
+console.log(getDiv(34,35));
