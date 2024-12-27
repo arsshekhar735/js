@@ -271,13 +271,29 @@
 // // console.log(obj);
 // // console.log(typeof(obj));//This will type of variable
 
-// //Now we will see the Array.
-// console.log("we will see the Array.");
-// //Creation of Arrays
-// let arr = [1,2,3,4,5];
-// console.log(arr);
-// console.log(typeof(arr));
-// //array constructor
-// let brr = new Array('Suman',1,'Shekhar');
-// console.log(brr);
-// console.log(typeof(brr));
+//Now we will see the Array.
+console.log("we will see the Array.");
+//Creation of Arrays
+let arr = [1,2,3,4,5];
+console.log(arr);
+console.log(typeof(arr));
+//array constructor
+let brr = new Array('Suman',1,'Shekhar');
+
+console.log(typeof(brr));
+
+console.log(arr[2]);//Through index we can acess the elemnt of the array.
+//Now we will see some built in function in Array.
+brr.push('Singh');
+console.log(brr);
+
+brr.pop();
+console.log(brr);
+
+brr.shift();
+console.log(brr);
+brr.unshift('Suman');
+console.log(brr);
+
+
+console.log(brr.slice(1,2));
