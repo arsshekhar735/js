@@ -259,14 +259,25 @@
 // console.log(getDiv(34,35));
 
 //Now we will see the Object.
-console.log("we will see the Object.");
-//The object is collection of key-value pairs
+// console.log("we will see the Object.");
+// //The object is collection of key-value pairs
 
-let obj = {
-    "myname" : "Suman Shekhar",
-    "age": 21,
-    "Education": "B.Tech"
-};
+// let obj = {
+//     "myname" : "Suman Shekhar",
+//     "age": 21,
+//     "Education": "B.Tech"
+// };
 
-console.log(obj);
-console.log(typeof(obj));//This will type of variable
+// console.log(obj);
+// console.log(typeof(obj));//This will type of variable
+
+//Now we will see the Array.
+console.log("we will see the Array.");
+//Creation of Arrays
+let arr = [1,2,3,4,5];
+console.log(arr);
+console.log(typeof(arr));
+//array constructor
+let brr = new Array('Suman',1,'Shekhar');
+console.log(brr);
+console.log(typeof(brr));
