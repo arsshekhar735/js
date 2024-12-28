@@ -271,29 +271,61 @@
 // // console.log(obj);
 // // console.log(typeof(obj));//This will type of variable
 
-//Now we will see the Array.
-console.log("we will see the Array.");
-//Creation of Arrays
-let arr = [1,2,3,4,5];
-console.log(arr);
-console.log(typeof(arr));
-//array constructor
-let brr = new Array('Suman',1,'Shekhar');
+// //Now we will see the Array.
+// console.log("we will see the Array.");
+// //Creation of Arrays
+// let arr = [1,2,3,4,5];
+// console.log(arr);
+// console.log(typeof(arr));
+// //array constructor
+// let brr = new Array('Suman',1,'Shekhar');
 
-console.log(typeof(brr));
+// console.log(typeof(brr));
 
-console.log(arr[2]);//Through index we can acess the elemnt of the array.
-//Now we will see some built in function in Array.
-brr.push('Singh');
-console.log(brr);
+// console.log(arr[2]);//Through index we can acess the elemnt of the array.
+// //Now we will see some built in function in Array.
+// brr.push('Singh');
+// console.log(brr);
 
-brr.pop();
-console.log(brr);
+// brr.pop();
+// console.log(brr);
 
-brr.shift();
-console.log(brr);
-brr.unshift('Suman');
-console.log(brr);
+// brr.shift();
+// console.log(brr);
+// brr.unshift('Suman');
+// console.log(brr);
 
 
-console.log(brr.slice(1,2));
+// console.log(brr.slice(1,2));
+
+//Now we will see the MAP function
+
+let crr = [1,2,3];
+//We will make the square of the element of the array using map function
+//Map functin is where we run any process on existing function/array/items.
+let anscrr = crr.map((number) => {//here we used map function and we made the function using array function.
+    return number*number;
+})
+console.log(anscrr);
+
+console.log(typeof(anscrr));
+
+console.log(typeof(crr));
+
+//Now we will see the filter thing.
+console.log("we will see the filter thing.");
+
+let farr = [10,20,30,45,51,60,43,89];
+
+let ansfrr = farr.filter((number) => {
+    if(number % 2 == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+});
+
+console.log(ansfrr);
