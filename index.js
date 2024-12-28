@@ -102,7 +102,7 @@ for(let i = 10; i >= 1; i--)
 console.log(" we will see the break keyboard");
 
 for(let i = 1; i <= 10; i++)
-    
+
 {
     if(i == 5)
     {
@@ -330,3 +330,22 @@ let ansfrr = farr.filter((number) => {
 });
 
 console.log(ansfrr);
+
+//Now we will sort the array using sort function
+console.log("We will sort the array");
+
+let soarry= [98,56,989,3245,1654];
+soarry.sort();
+console.log(soarry);
+
+console.log("We will sort the array in descending order");
+
+// Define an array of numbers.
+let sodarry = [98, 56, 989, 3245, 1654];
+
+// Use the `sort` method with a custom comparator function.
+// The comparator `(b - a)` ensures the array is sorted in descending order.
+sodarry.sort((a, b) => b - a);
+
+// Print the sorted array.
+console.log(sodarry); // Output: [3245, 1654, 989, 98, 56]
