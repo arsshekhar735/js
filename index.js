@@ -1,26 +1,26 @@
 console.log("Jai Shree Ram");
 var x = 10;
 console.log(x);
-var x = 20;
+var x = 20; // Redeclaring `x` using `var` is allowed.
 console.log(x);
 
 
 let a = 10;
 console.log(a);
-//cannot able to access outside of block
-// {
-//     let b = 20;
-// }
+//Cannot access `b` outside of block scope.
+{
+    let b = 20;
+ }
 // console.log(b);
 //Cannot redeclared
 // let a = 20;
 // console.log(a);
-//Dynaical typed language
-a = "Radhe";
+// Dynamically typed language example.
+a = "Radhe"; //Changing type of `a` from number to string.
 console.log(a);
 
-//const
-const n = 20;
+//Constant variable
+const n = 20;// `const` declares a constant that cannot be reassigned.
 console.log(n);
 
 // n = 220; //cannot be change the value
@@ -28,15 +28,15 @@ console.log(n);
 // conts n = 500;//cannot do this 
 
 //This is and logical operator.If anyone is false then it will give false response
-let ans = (true && false && true);
+let ans = (true && false && true);// Evaluates to `false`.
 console.log(ans);
 //This will be or logical operator. If anyone is true then it will give true response
 
-let op = (true || false || false);
+let op = (true || false || false);// Evaluates to `true`.
 console.log(op);
 
 // Now we will see the not case.Means that if we will write false with !. Then it will give opposite thing. for example below code output will be true.
-let no = !(false);
+let no = !(false);// `!` inverts the boolean value.
 console.log(no);
 
 //Now we will see the working with non booleans. It means that (false && 3), (false && 'Radhe Radhe'). So working with non boolean, there is 
@@ -44,13 +44,13 @@ console.log(no);
 //Falsey include undefined, null, 0, empty string' ',false, NaN.
 //Truthy means that anything which is not falsey.
 
-let non = (false || 3); //output is 3.
+let non = (false || 3);  // Outputs `3` as `3` is truthy.
 console.log(non);
 
-let non1 = (false && 3); //output is false.
+let non1 = (false && 3); // Outputs `false` as `false` is falsy.
 console.log(non1);
 
-let non2 = !(3); //output is false.
+let non2 = !(3); // Outputs `false` as `3` is truthy.
 console.log(non1);
 
 
@@ -59,10 +59,10 @@ console.log(non1);
 //In false means anyone if true then it will give true.
 //In XOR if same thing is then it will give false and opposite thing will give true. EX- 0,0 => 0, 0,1=> 1.
 
-console.log(~(0)); 
+console.log(~(0));  // `~` flips all the bits.
 
-console.log(2 ^ 2);//This is XOR.
-console.log(2 ^ 3);
+console.log(2 ^ 2); // XOR operation.
+console.log(2 ^ 3);// XOR operation with different inputs.
 
 //Now we will see the left shift and right shift.
 //When we do left shift(<<) then it get multiplied by 2. 
@@ -89,14 +89,14 @@ else{
 
 for(let i = 1; i < 10; i++) // i = 1 => initailisation; i < 10 => condition; i++  => updation
 {
-    console.log("Jai Shree Ram"); //loop logic
+    console.log("Jai Shree Ram"); // Prints the phrase 9 times.
 }
 
 //Now we will do reverse counting
 
 for(let i = 10; i >= 1; i--)
 {
-    console.log(i)
+    console.log(i)// Prints numbers from 10 to 1.
 }
 //now we will see the break keyboard
 console.log(" we will see the break keyboard");
@@ -105,7 +105,7 @@ for(let i = 1; i <= 10; i++)
 {
     if(i == 5)
     {
-        break;
+        break;// Exits the loop when `i` is 5.
     }
     else
     {
@@ -119,7 +119,7 @@ for(let i = 1; i < 10; i++) //it will skip the 4 and remaining print as it.
 {
     if(i == 4)
     {
-        continue;
+        continue;// Skips the iteration when `i` is 4.
     }
     else
     {
@@ -141,7 +141,7 @@ console.log("we will do reverse number");
 let j = 5;
 while(j>=1)
 {
-    console.log(j);
+    console.log(j);// Prints numbers from 5 to 1.
     j--;
 }
 
@@ -156,12 +156,12 @@ for(let i = 10; i < 20; i++)
 //Now we will see the concatenation
 let fname = "Suman";
 let lname = "Shekhar";
-console.log(fname +" "+ lname);
+console.log(fname +" "+ lname);// Concatenates first and last name.
 //This is also a way to declare the string
 let str = `Hello
 Kaise
 ho
-app`;
+app`;// Template literals for multiline strings.
 console.log(str);
 //Now we will calculate the length of string.
 console.log("we will calculate the length of string");
@@ -318,7 +318,7 @@ console.log("we will see the filter thing.");
 let farr = [10,20,30,45,51,60,43,89];
 
 let ansfrr = farr.filter((number) => {
-    if(number % 2 == 0)
+    if(number % 2 == 0)// Filters even numbers.
     {
         return true;
     }
