@@ -1,4 +1,7 @@
 console.log("Jai Shree Ram");
+console.log("This code is written by Suman Shekhar IIITDM Kurnool");
+console.log("This is basically code for beginner who want learn JS");
+                                                                            
 var x = 10;
 console.log(x);
 var x = 20; // Redeclaring `x` using `var` is allowed.
@@ -10,7 +13,7 @@ console.log(a);
 //Cannot access `b` outside of block scope.
 {
     let b = 20;
- }
+}
 // console.log(b);
 //Cannot redeclared
 // let a = 20;
@@ -148,7 +151,7 @@ while(j>=1)
 
 for(let i = 10; i < 20; i++)
 {
-    console.log()
+    console.log(i);
 }
 
 
@@ -319,14 +322,16 @@ console.log("we will see the filter thing.");
 let farr = [10,20,30,45,51,60,43,89];
 
 let ansfrr = farr.filter((number) => {
-    if(number % 2 == 0)// Filters even numbers.
+    /*if(number % 2 == 0)// Filters even numbers.
     {
         return true;
     }
     else
     {
         return false;
-    }
+    }*/
+   //This is the second method using return.
+   return number*number;  
 });
 
 console.log(ansfrr);
@@ -348,4 +353,49 @@ let sodarry = [98, 56, 989, 3245, 1654];
 sodarry.sort((a, b) => b - a);
 
 // Print the sorted array.
-console.log(sodarry); // Output: [3245, 1654, 989, 98, 56]
+console.log(sodarry); // Output: [3245, 1654, 989, 98, 56] 
+
+
+//Now we will see the FOR-EACH function. It means that we can process any thing on the each element of the array.
+let forarr = [10,20,30,40];
+
+let ansforarr = forarr.forEach((number,index) => {
+    console.log("Number: ",number,"index: ",index);
+}
+)
+
+//Now we will take another example
+let addforarr= forarr.forEach((number) => {
+    console.log(number + 10);
+
+
+})
+//console.log("Sum of element is: ",addforarr);
+
+//Now we will see how array work with function
+
+let sssarr = [25,50,75,100];
+
+function getSSum(sssarr){
+    let len = sssarr.length;
+    let sum = 0;
+    for(let i = 0; i < len; i++)
+    {
+        sum = sum + sssarr[i];
+    }
+    return sum;
+}
+
+console.log("Total Sum of array is: ",getSSum(sssarr));
+
+//Now we will do the same thing with FOR-EACH FUNCTION
+function getSSSum(sssarr)
+{
+    let sum = 0;
+    sssarr.forEach((value) => {
+        sum = sum + value;
+    })
+    return sum;
+}
+console.log("The sum of an array using For-Each is:",getSSSum(sssarr));
+
