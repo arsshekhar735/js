@@ -1,3 +1,4 @@
+/*
 console.log("Jai Shree Ram");
 console.log("This code is written by Suman Shekhar IIITDM Kurnool");
 console.log("This is basically code for beginner who want learn JS");
@@ -322,14 +323,14 @@ console.log("we will see the filter thing.");
 let farr = [10,20,30,45,51,60,43,89];
 
 let ansfrr = farr.filter((number) => {
-    /*if(number % 2 == 0)// Filters even numbers.
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }*/
+    // /*if(number % 2 == 0)// Filters even numbers.
+    // {
+    //     return true;
+    // }
+    // else
+    // {
+    //     return false;
+    // }
    //This is the second method using return.
    return number*number;  
 });
@@ -398,4 +399,17 @@ function getSSSum(sssarr)
     return sum;
 }
 console.log("The sum of an array using For-Each is:",getSSSum(sssarr));
+*/
 
+//Now we will see the hosting
+//It means that hosting when you define the function after the function calling. Due to hosting function 
+//compiler automatically shift the function declaration on top of the scope.
+
+//Lets take example 
+
+sayMyName("Suman Shekhar");//function calling
+
+function sayMyName(finalname) //function defined
+{
+    console.log("My name is ",finalname);
+}
