@@ -3,14 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event</title>
+    <title>Event Phases</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Styling for the phase section */
+        .phase {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .phase h1 {
+            font-size: 2rem;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .phase h3 {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Styling the ordered list */
+        ol {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #007bff;
+        }
+
+        /* Add hover effect for list items */
+        li:hover {
+            background-color: #e7f1ff;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 20px;
+        }
+
+    </style>
 </head>
 <body>
     <p>
-        This page we will see everything about event.
+        Welcome to the event tutorial page! Here, we will explore the different phases of an event in JavaScript.
     </p>
-    <script src="event.js">
 
-    </script>
+    <div class="phase">
+        <h1>
+            Phases of Event Propagation
+        </h1>
+        <h3>
+            In JavaScript, events propagate through three distinct phases.
+        </h3>
+        <ol>
+            <li><strong>Capturing Phase:</strong> During this phase, the event is propagated from the root element down to the target element. It allows us to intercept the event before it reaches the target.</li>
+            <li><strong>At-target Phase:</strong> This phase occurs when the event reaches the target element. The event is processed here, at the exact location where the event was triggered.</li>
+            <li><strong>Bubbling Phase:</strong> In the bubbling phase, the event propagates back up from the target element to the root element, allowing any ancestor elements to handle the event.</li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>Learn more about event handling in JavaScript.</p>
+    </footer>
+
+    <script src="event.js"></script>
 </body>
 </html>
