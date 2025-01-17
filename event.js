@@ -16,12 +16,18 @@ ppara.addEventListener('click',changetext);
 // If you want to remove the event listener.
 
 // ppara.removeEventListener('click',changetext);
-
+// Selecting the anchor element using its ID 'anchor' and storing it in the 'anchorelement' variable
 let anchorelement = document.querySelector('#anchor');
 
-function stopdefault(event)
-{
+// Function to stop the default behavior of the anchor link
+function stopdefault(event) {
+    // Prevents the default behavior of the event (e.g., preventing the page from navigating when the anchor is clicked)
     event.preventDefault();
-    anchorelement.textContent="Click Done";
+
+    // Changes the text content of the anchor element to "Click Done"
+    anchorelement.textContent = "Click Done";
 }
-anchorelement.addEventListener('click',stopdefault);
+
+// Adding an event listener to the anchor element to listen for a 'click' event
+// When the anchor element is clicked, the stopdefault function will be called
+anchorelement.addEventListener('click', stopdefault);
