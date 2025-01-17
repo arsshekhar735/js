@@ -1,4 +1,4 @@
-/*
+
 console.log("Jai Shree Ram");
 console.log("This code is written by Suman Shekhar IIITDM Kurnool");
 console.log("This is basically code for beginner who want learn JS");
@@ -234,7 +234,7 @@ function getaverage(num1, num2){
 
 getaverage(34,35);
 
-//Now we will see the Return Function => The function which return something 
+// Now we will see the Return Function => The function which return something 
 
 console.log("we will see the Return Function");
 function getSum(aa,bb,cc){
@@ -399,7 +399,7 @@ function getSSSum(sssarr)
     return sum;
 }
 console.log("The sum of an array using For-Each is:",getSSSum(sssarr));
-*/
+
 
 //Now we will see the hosting
 //It means that hosting when you define the function after the function calling. Due to hosting function 
@@ -413,3 +413,5 @@ function sayMyName(finalname) //function defined
 {
     console.log("My name is ",finalname);
 }
+console.log(mmm);//It will give refernce error
+let mmm = 20;
