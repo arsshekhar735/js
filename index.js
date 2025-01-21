@@ -353,6 +353,7 @@ let sodarry = [98, 56, 989, 3245, 1654];
 // The comparator `(b - a)` ensures the array is sorted in descending order.
 sodarry.sort((a, b) => b - a);
 
+
 // Print the sorted array.
 console.log(sodarry); // Output: [3245, 1654, 989, 98, 56] 
 
