@@ -23,3 +23,19 @@ for(let i = 1; i < 100; i++)
 document.body.appendChild(mydiv);
 const t4 = performance.now();
 console.log("total time taken by code is :" + (t4-t3));
+
+//best code
+const t5 = performance.now();
+let fragment = document.createDocumentFragment();
+
+for(let i = 0; i < 100; i++)
+{
+    let para = document.createElement('p');
+    para.textContent = "This is para" + i;
+    //No reflow and repaint
+    fragment.appendChild(para);
+}
+   //1 reflow and 1 repaint
+document.body.appendChild(fragment);
+const t6 = performance.now();
+console.log("total time taken by best code is :" + (t6-t5));
